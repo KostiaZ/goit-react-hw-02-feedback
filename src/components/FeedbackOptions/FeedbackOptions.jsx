@@ -1,7 +1,6 @@
-export const Feedback = ({ title, options, onLeaveFeedback }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
-      <h2>{title}</h2>
       {options.map(option => {
         return (
           <button
@@ -16,3 +15,5 @@ export const Feedback = ({ title, options, onLeaveFeedback }) => {
     </div>
   );
 };
+
+export default FeedbackOptions;
