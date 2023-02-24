@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
+import css from '../FeedbackOptions/FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
+    <div className={css.container}>
       {options.map(option => {
         return (
           <button
+            className={css.button}
             type="button"
             onClick={() => onLeaveFeedback(option)}
             key={option}
